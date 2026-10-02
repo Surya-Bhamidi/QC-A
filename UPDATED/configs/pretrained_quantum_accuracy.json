@@ -1,0 +1,12 @@
+{
+  "dataset":"pneumoniamnist",
+  "seeds":[0,1,2,3,4],
+  "kernels":["entangled","product","dot"],
+  "backbone":{"architecture":"resnet18","weights":"IMAGENET1K_V1","weight_file":"pretrained_models/resnet18-f37072fd.pth","pool_size":2,"feature_batch_size":32,"threads":8,"training_views":["identity","horizontal_flip"]},
+  "head":{"image_size":28,"patch_size":14,"embed_dim":32,"heads":2,"qk_dim":4,"depth":2,"mlp_dim":64,"dropout":0.1,"beta":2.0},
+  "training":{"epochs":16,"batch_size":64,"lr":0.0008,"weight_decay":0.001,"threads":4,"warmup_epochs":2,"ema_decay":0.95,"mixup_alpha":0.1,"class_weight":true},
+  "linear_C_candidates":[0.01,0.1,1.0,10.0],
+  "selection":"Best EMA checkpoint by class-balanced validation NLL. Linear regularization by the same validation criterion. Fixed recipe for all neural kernels; no test-dependent choices.",
+  "execution":"Frozen classical ImageNet ResNet-18, original 28-pixel images upsampled by official weight preprocessing, four spatial feature tokens, actual four-qubit gate simulation for fidelity attention. Full-test PennyLane compute-uncompute verification for both quantum maps.",
+  "disclosure":"Exploratory follow-up on the previously inspected official test cohort. External ImageNet pretraining changes the model/data regime. No physical QPU, finite-shot accuracy or newly invented algorithm claim. All controls use the same features."
+}

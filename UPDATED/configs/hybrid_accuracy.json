@@ -1,0 +1,11 @@
+{
+  "purpose": "Exploratory convolutional-token accuracy study. A local convolutional encoder preserves radiographic structure before matched fidelity or dot attention. Existing frozen experiments remain unchanged.",
+  "dataset": "pneumoniamnist",
+  "pilot_seeds": [0, 1, 2],
+  "final_seeds": [0, 1, 2, 3, 4],
+  "kernels": ["fidelity", "dot"],
+  "architecture": {"embed_dim":48,"heads":3,"qk_dim":4,"depth":2,"mlp_dim":96,"dropout":0.1,"beta":2.0,"token_grid":4},
+  "training": {"epochs":30,"batch_size":64,"lr":0.0006,"weight_decay":0.0001,"class_weight":true,"threads":4},
+  "selection": "No hyperparameter grid. Run three validation-only seeds, then freeze this exact paired design before test inference.",
+  "claim_boundary": "Accuracy gains belong to the hybrid architecture. Fidelity-specific benefit requires superiority to the identical dot-kernel control. This is not a quantum-advantage or novelty claim."
+}

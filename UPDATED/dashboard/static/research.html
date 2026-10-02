@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fidelity attention research</title>
+<style>
+:root{font:16px system-ui;color:#e2e8f0;background:#0d1523}body{max-width:1200px;margin:auto;padding:32px}h1{font-size:2.2rem;letter-spacing:-.04em}p{line-height:1.6;color:#bac7d9}.notice{border-left:3px solid #68cfba;padding:12px 20px;background:#172739}.controls{display:flex;flex-wrap:wrap;gap:14px;align-items:end;margin:22px 0}label{display:grid;gap:7px;font-size:13px;color:#b3c3d9}select,input,button{padding:10px;background:#1c2c43;color:#fff;border:1px solid #49607c;border-radius:6px}button{background:#67cfb9;color:#102331;font-weight:700;cursor:pointer}button:disabled{opacity:.5}#status{white-space:pre-wrap}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}.card{background:#142238;padding:18px;border-radius:9px}canvas{width:100%;image-rendering:pixelated}pre{white-space:pre-wrap;font-size:13px;line-height:1.5}img{width:140px;image-rendering:pixelated}h2{margin-top:35px;font-size:1.3rem}.sub{font-size:13px;color:#9bb0cb}
+</style></head><body>
+<p class="sub">REPRODUCIBLE MEDMNIST EXPERIMENTS</p><h1>Fidelity attention & measurement budgets</h1>
+<p class="notice">Research only. This is not a clinical diagnostic tool. Probabilities and attention maps have not been clinically validated. The maps show model attention, not lesion locations.</p>
+<div class="controls"><label>Completed model / seed<select id="run"></select></label><label>Validation image<input id="sample" type="number" value="0" min="0" max="523"></label>
+<label>Evaluation<select id="mode"><option value="analytical">Classical analytical</option><option value="emulator">Ideal shot probability emulator</option><option value="ideal_circuit">Ideal statevector circuits</option><option value="finite_circuit">Finite-shot circuits (slower)</option></select></label>
+<label>Mean shots / pair<select id="shots"><option>16</option><option>32</option><option selected>64</option><option>128</option><option>256</option><option>512</option><option>1024</option></select></label>
+<label>Allocation<select id="policy"><option>uniform</option><option>variance</option><option>sensitivity</option><option>combined</option></select></label>
+<label>Classifier circuit<select id="inferenceCircuit"><option value="swap">Ancilla SWAP</option><option value="destructive">Destructive SWAP</option></select></label><button id="predict">Evaluate image</button></div>
+<p id="status" role="status">Loading completed models…</p><div id="prediction" class="card" hidden></div>
+<div class="grid" id="maps"></div>
+<h2>Selected-pair circuit and noise analysis</h2><p>Execute a full circuit for one CLS-to-patch pair from the last fidelity layer. This probe does not apply noise to the whole classifier.</p>
+<div class="controls"><label>Circuit<select id="method"><option value="swap">Ancilla SWAP</option><option value="destructive">Destructive SWAP</option><option value="uncompute">Compute–uncompute</option></select></label>
+<label>Noise<select id="noise"><option value="none">Ideal</option><option value="calibration_proxy">2021 calibration proxy</option><option>readout</option><option>one_qubit</option><option>two_qubit</option><option>amplitude</option><option>phase</option><option>bitflip</option><option>phaseflip</option><option>preparation</option></select></label>
+<label>Channel strength<input type="number" id="strength" min="0" max="0.1" step="0.001" value="0.01"></label>
+<label>Mitigation<select id="mitigation"><option value="none">None</option><option value="readout_inverse">Known readout inversion</option></select></label><button id="probe" disabled>Run pair circuit</button></div>
+<pre id="probeResult" class="card">Choose a fidelity model and evaluate an image first.</pre>
+<p class="sub">Raw logs, configurations, per-example predictions and allocation decisions are retained in runs/. Circuit execution is simulation; physical QPU access is not configured.</p>
+<script src="/static/research.js"></script></body></html>

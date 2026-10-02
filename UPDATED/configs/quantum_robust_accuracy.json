@@ -1,0 +1,17 @@
+{
+  "dataset": "pneumoniamnist",
+  "pilot_seeds": [0,1],
+  "final_seeds": [0,1,2,3,4],
+  "kernels": ["entangled","product","dot"],
+  "recipes": [
+    {"name":"robust_adamw","sam_rho":0.0},
+    {"name":"robust_sam","sam_rho":0.05}
+  ],
+  "architecture": {"image_size":28,"patch_size":7,"embed_dim":32,"heads":2,"qk_dim":4,"depth":2,"mlp_dim":64,"dropout":0.1,"beta":2.0},
+  "training": {"epochs":24,"batch_size":64,"lr":0.0008,"weight_decay":0.001,"threads":4,"warmup_epochs":3,"class_weight":true,"augmentation":true,"mixup_alpha":0.2,"ema_decay":0.98},
+  "selection": "Best EMA checkpoint by class-balanced validation NLL. Choose one shared recipe minimizing mean class-balanced validation NLL across both pilot seeds and all three kernels. No test outcome selects it.",
+  "inference": "Default argmax, validation-only temperature calibration, and equal-probability five-model ensemble. No target adaptation or test-label threshold selection.",
+  "quantum_map": "Four RY rotations; CNOT chain; per-wire RZ(theta) then RY(theta/2). Product ablation removes CNOT and second encoding. Fidelity from a compute-uncompute quantum circuit.",
+  "quantum_execution": "Differentiable 4-qubit gate/statevector simulation in training. Selected entangled ensemble additionally evaluated on every test overlap using batched PennyLane compute-uncompute probabilities. Physical hardware unavailable; no quantum advantage claim.",
+  "test_disclosure": "The official test set has been inspected repeatedly; all final comparisons are exploratory. Goal 90+ is not guaranteed."
+}

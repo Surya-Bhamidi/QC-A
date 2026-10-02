@@ -1,0 +1,1 @@
+{"dataset":"pneumoniamnist","model":"fidelity","seed":900,"epochs":2,"fraction":1.0,"threads":4}

@@ -1,0 +1,85 @@
+{
+  "n": 524,
+  "accuracy": 0.9770992366412213,
+  "balanced_accuracy": 0.9773207654955727,
+  "auroc": 0.9968961249166904,
+  "sensitivity": 0.9768637532133676,
+  "specificity": 0.9777777777777777,
+  "precision": 0.9921671018276762,
+  "f1": 0.9844559585492227,
+  "npv": 0.9361702127659575,
+  "ece": 0.006758198597049028,
+  "brier": 0.018251556654372343,
+  "nll": 0.070358024335116,
+  "confusion_matrix": [
+    [
+      132,
+      3
+    ],
+    [
+      9,
+      380
+    ]
+  ],
+  "per_class": {
+    "recall": [
+      0.9777777777777777,
+      0.9768637532133676
+    ],
+    "specificity": [
+      0.9768637532133676,
+      0.9777777777777777
+    ],
+    "f1": [
+      0.9565217391304348,
+      0.9844559585492227
+    ]
+  },
+  "averaging": "positive_class_1",
+  "reliability": [
+    {
+      "bin": 5,
+      "n": 3,
+      "accuracy": 0.3333333333333333,
+      "confidence": 0.5326263904571533
+    },
+    {
+      "bin": 6,
+      "n": 4,
+      "accuracy": 0.75,
+      "confidence": 0.6297430396080017
+    },
+    {
+      "bin": 7,
+      "n": 7,
+      "accuracy": 0.8571428571428571,
+      "confidence": 0.7408813834190369
+    },
+    {
+      "bin": 8,
+      "n": 14,
+      "accuracy": 0.7857142857142857,
+      "confidence": 0.8549579977989197
+    },
+    {
+      "bin": 9,
+      "n": 496,
+      "accuracy": 0.9899193548387096,
+      "confidence": 0.9912886023521423
+    }
+  ],
+  "kernel": "dot",
+  "seed": 0,
+  "best_epoch": 13,
+  "training_seconds": 10.154763700207695,
+  "trainable_parameters": 30658,
+  "frozen_encoder_parameters": 11176512,
+  "external_pretraining": "ImageNet-1K",
+  "physical_hardware": false,
+  "shots": 0,
+  "pennylane_qnode_calls": 0,
+  "head_backend": "classical_dot",
+  "temperature": 0.7902752968632345,
+  "balanced_nll": 0.07178744673728943,
+  "inference_seconds_head_only": 0.013942599995061755
+}

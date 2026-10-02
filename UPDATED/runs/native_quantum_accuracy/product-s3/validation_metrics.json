@@ -1,0 +1,85 @@
+{
+  "n": 524,
+  "accuracy": 0.9675572519083969,
+  "balanced_accuracy": 0.9684756736170618,
+  "auroc": 0.9964581548129106,
+  "sensitivity": 0.9665809768637532,
+  "specificity": 0.9703703703703703,
+  "precision": 0.9894736842105263,
+  "f1": 0.9778933680104032,
+  "npv": 0.9097222222222222,
+  "ece": 0.014752519153456644,
+  "brier": 0.020371334696867742,
+  "nll": 0.07442508300312879,
+  "confusion_matrix": [
+    [
+      131,
+      4
+    ],
+    [
+      13,
+      376
+    ]
+  ],
+  "per_class": {
+    "recall": [
+      0.9703703703703703,
+      0.9665809768637532
+    ],
+    "specificity": [
+      0.9665809768637532,
+      0.9703703703703703
+    ],
+    "f1": [
+      0.9390681003584229,
+      0.9778933680104032
+    ]
+  },
+  "averaging": "positive_class_1",
+  "reliability": [
+    {
+      "bin": 5,
+      "n": 4,
+      "accuracy": 0.0,
+      "confidence": 0.5508209466934204
+    },
+    {
+      "bin": 6,
+      "n": 5,
+      "accuracy": 0.4,
+      "confidence": 0.6548887491226196
+    },
+    {
+      "bin": 7,
+      "n": 8,
+      "accuracy": 0.375,
+      "confidence": 0.7544170022010803
+    },
+    {
+      "bin": 8,
+      "n": 7,
+      "accuracy": 0.8571428571428571,
+      "confidence": 0.8317083716392517
+    },
+    {
+      "bin": 9,
+      "n": 500,
+      "accuracy": 0.992,
+      "confidence": 0.9899215698242188
+    }
+  ],
+  "kernel": "product",
+  "seed": 3,
+  "best_epoch": 10,
+  "training_seconds": 43.17105539992917,
+  "trainable_parameters": 30658,
+  "frozen_encoder_parameters": 11176512,
+  "external_pretraining": "ImageNet-1K",
+  "physical_hardware": false,
+  "shots": 0,
+  "pennylane_qnode_calls": 0,
+  "head_backend": "quantum_gate_statevector_simulation",
+  "temperature": 0.8489449020054671,
+  "balanced_nll": 0.07464153319597244,
+  "inference_seconds_head_only": 0.08978529996238649
+}

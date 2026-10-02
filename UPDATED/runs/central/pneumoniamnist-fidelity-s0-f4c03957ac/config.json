@@ -1,0 +1,22 @@
+{
+  "dataset": "pneumoniamnist",
+  "model": "fidelity",
+  "seed": 0,
+  "image_size": 28,
+  "patch_size": 7,
+  "embed_dim": 32,
+  "heads": 2,
+  "qk_dim": 4,
+  "depth": 2,
+  "mlp_dim": 64,
+  "dropout": 0.1,
+  "beta": 2.0,
+  "epochs": 10,
+  "batch_size": 64,
+  "lr": 0.0008,
+  "weight_decay": 0.0001,
+  "fraction": 1.0,
+  "class_weight": true,
+  "augment": false,
+  "threads": 4
+}

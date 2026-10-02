@@ -1,0 +1,11 @@
+{
+  "purpose": "Frozen full-split matched-kernel CPU benchmark, selected before new test evaluation",
+  "datasets": ["pneumoniamnist"],
+  "seeds": [0, 1, 2, 3, 4],
+  "models": ["dot_full", "dot", "cosine", "rbf", "fidelity"],
+  "base": {"image_size":28,"patch_size":7,"embed_dim":32,"heads":2,"qk_dim":4,"depth":2,"mlp_dim":64,"dropout":0.1,"beta":2.0,"epochs":10,"batch_size":64,"lr":0.0008,"weight_decay":0.0001,"fraction":1.0,"class_weight":true,"augment":false,"threads":4},
+  "measurement": {"budgets":[16,32,64,128,256,512,1024],"policies":["uniform","variance","sensitivity","combined"],"pilot":8,"rounds":3,"tolerance":0.0,"backend":"classical_probability_sampling_emulator"},
+  "selection": "Best unweighted validation NLL; temperature fitted only on validation; no test tuning",
+  "primary_comparisons": ["fidelity vs dot: test AUROC", "combined vs uniform at 64 mean shots: attention output MSE and test AUROC"],
+  "inference_note": "All models train analytically. Shot modes reuse each fidelity checkpoint. Actual circuit and noise probes are separate and explicitly labeled."
+}

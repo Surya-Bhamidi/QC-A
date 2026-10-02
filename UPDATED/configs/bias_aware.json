@@ -1,0 +1,18 @@
+{
+  "study": "Selective mitigation and shot allocation for final-CLS fidelity attention",
+  "dataset": "pneumoniamnist",
+  "seeds": [0,1,2,3,4,5,6,7,8,9],
+  "measurement_repeats": [0,1,2,3,4],
+  "budgets": [64,256],
+  "noises": ["historical","stress"],
+  "policies": ["raw_uniform","raw_variance","raw_sensitivity","raw_combined","calibrated_uniform","calibrated_pooled","calibrated_neyman","risk_uniform","risk_joint","risk_pooled","risk_diagonal","risk_no_cal_cov"],
+  "risk_config": {"pilot":8,"calibration_fraction":0.125,"slope_floor":0.15,"alternations":4,"coordinate_sweeps":15},
+  "primary": {"noise":"historical","budget":64,"metric":"output_mse","contrasts":["risk_joint minus raw_uniform","risk_joint minus raw_combined","risk_joint minus calibrated_uniform","risk_joint minus calibrated_neyman","risk_joint minus calibrated_pooled"],"correction":"Holm across five exact paired seed tests"},
+  "secondary": "All other budgets, noise strengths, accuracy/AUROC and component ablations",
+  "cost_boundary": "Every image pays four finite-shot reference circuits, pilots and production within B=2*17*shots; raw methods spend entire budget on targets",
+  "execution": "Exact product-feature destructive-SWAP factorized noisy density-matrix simulation, signed parity sampling; no physical QPU",
+  "scope": "All 624 official test images; only final block CLS-to-token attention is measured; other attention remains analytical",
+  "independent_simulator_check": "Seed 0, test image 0, head 0, token indices 0/8/16, both noises: full 8-wire PennyLane probabilities and 4096 finite shots each; report all discrepancies",
+  "selection": "Fixed theoretical settings and validation-only runtime pilot; retain all methods and outcomes",
+  "test_disclosure": "Previously inspected official test dataset; this is a frozen follow-up, not an untouched external confirmation"
+}

@@ -1,0 +1,226 @@
+{
+  "base": {
+    "image_size": 28,
+    "patch_size": 7,
+    "embed_dim": 32,
+    "heads": 2,
+    "qk_dim": 4,
+    "depth": 2,
+    "mlp_dim": 64,
+    "dropout": 0.1,
+    "beta": 2.0,
+    "epochs": 10,
+    "batch_size": 64,
+    "lr": 0.0008,
+    "weight_decay": 0.0001,
+    "fraction": 1.0,
+    "class_weight": true,
+    "augment": false,
+    "threads": 4
+  },
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "entries": [
+    {
+      "name": "fraction-0.01-dot",
+      "override": {
+        "fraction": 0.01,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "fraction-0.01-fidelity",
+      "override": {
+        "fraction": 0.01,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "fraction-0.05-dot",
+      "override": {
+        "fraction": 0.05,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "fraction-0.05-fidelity",
+      "override": {
+        "fraction": 0.05,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "fraction-0.1-dot",
+      "override": {
+        "fraction": 0.1,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "fraction-0.1-fidelity",
+      "override": {
+        "fraction": 0.1,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "fraction-0.25-dot",
+      "override": {
+        "fraction": 0.25,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "fraction-0.25-fidelity",
+      "override": {
+        "fraction": 0.25,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "fraction-0.5-dot",
+      "override": {
+        "fraction": 0.5,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "fraction-0.5-fidelity",
+      "override": {
+        "fraction": 0.5,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "fraction-1.0-dot",
+      "override": {
+        "fraction": 1.0,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "fraction-1.0-fidelity",
+      "override": {
+        "fraction": 1.0,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "qk-2-dot",
+      "override": {
+        "qk_dim": 2,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "qk-2-fidelity",
+      "override": {
+        "qk_dim": 2,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "qk-4-dot",
+      "override": {
+        "qk_dim": 4,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "qk-4-fidelity",
+      "override": {
+        "qk_dim": 4,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "qk-6-dot",
+      "override": {
+        "qk_dim": 6,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "qk-6-fidelity",
+      "override": {
+        "qk_dim": 6,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "qk-8-dot",
+      "override": {
+        "qk_dim": 8,
+        "model": "dot"
+      }
+    },
+    {
+      "name": "qk-8-fidelity",
+      "override": {
+        "qk_dim": 8,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "heads-1",
+      "override": {
+        "heads": 1,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "heads-2",
+      "override": {
+        "heads": 2,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "heads-4",
+      "override": {
+        "heads": 4,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "beta-1.0",
+      "override": {
+        "beta": 1.0,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "beta-2.0",
+      "override": {
+        "beta": 2.0,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "beta-4.0",
+      "override": {
+        "beta": 4.0,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "unweighted",
+      "override": {
+        "class_weight": false,
+        "model": "fidelity"
+      }
+    },
+    {
+      "name": "augmentation",
+      "override": {
+        "augment": true,
+        "model": "fidelity"
+      }
+    }
+  ]
+}

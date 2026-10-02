@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-02T12:40:49.881122+00:00",
+  "manifest_sha256": "1c968182dedf32a47893df7d8cf242f43fc58139465488cb165bcd51d64a37ef",
+  "source_sha256": {
+    "research/quantum_robust.py": "de461cfde48d51deb385166b910746986eb58dcbd5a7d605222fc9a822e92ef5",
+    "research/quantum_robust_experiment.py": "86e6eb264b8c152cf9380826552c6042e5c9465fe29d634243ba9c69abd6da1f",
+    "research/models.py": "8cdd37c0e53d5ba9dc6ad120633237c6f3770fb659ba9be4aa74e3dbc6d192b4",
+    "research/config.py": "e755a190715eab3d74ae6000bc61b9ff8c79296051ee73a4cf30bc3e60d9318f",
+    "research/data.py": "724fa1c9f96781c81a805d929de948a455b67a18218f81664e8e0a35a579ad7f",
+    "research/train.py": "e7f0ece42c9cdcb4e665b5396ab1df576b946495ffd074c6a585697281de5d5f",
+    "research/metrics.py": "090a7ca9d6d14ce1e2031a255299e2f255c949114b27423dc08233279385b73d",
+    "research/runtime.py": "1fdf3d44f3cdd828afc9672bceb53f30411b23c6ffa503409c8a51204aad5e14"
+  },
+  "pilot_recipe_scores": {
+    "robust_adamw": 0.1934255932768186,
+    "robust_sam": 0.22819912433624268
+  },
+  "selected_recipe": "robust_adamw",
+  "pilot_summary_sha256": "9fb3f0acf07262d5a12171ea0c4001c5aaaa9c29ee67fb014edfcf99bbe53160",
+  "disclosure": "The official test set has been inspected repeatedly; all final comparisons are exploratory. Goal 90+ is not guaranteed."
+}

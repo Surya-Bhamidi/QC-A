@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-02T13:25:42.969208+00:00",
+  "manifest_sha256": "7048c40e3444ac7d540707f153498e6cc4f38e03d9baed4d6d53b483c003eebb",
+  "source_sha256": {
+    "research/quantum_robust.py": "de461cfde48d51deb385166b910746986eb58dcbd5a7d605222fc9a822e92ef5",
+    "research/quantum_robust_experiment.py": "86e6eb264b8c152cf9380826552c6042e5c9465fe29d634243ba9c69abd6da1f",
+    "research/models.py": "8cdd37c0e53d5ba9dc6ad120633237c6f3770fb659ba9be4aa74e3dbc6d192b4",
+    "research/config.py": "e755a190715eab3d74ae6000bc61b9ff8c79296051ee73a4cf30bc3e60d9318f",
+    "research/data.py": "724fa1c9f96781c81a805d929de948a455b67a18218f81664e8e0a35a579ad7f",
+    "research/train.py": "e7f0ece42c9cdcb4e665b5396ab1df576b946495ffd074c6a585697281de5d5f",
+    "research/metrics.py": "090a7ca9d6d14ce1e2031a255299e2f255c949114b27423dc08233279385b73d",
+    "research/runtime.py": "1fdf3d44f3cdd828afc9672bceb53f30411b23c6ffa503409c8a51204aad5e14",
+    "research/quantum_transfer.py": "2eaf47511183564f95daa1b016319dea1a4dc56132fc74337c190cb3b9c24057",
+    "research/quantum_transfer_experiment.py": "16e981e76983cf6ae509e716695c0cdea34b676359fc69367b42bd198c8c9267",
+    "research/quantum_native_accuracy.py": "c9487e2e0bb2e0d94b530eef8f550bb0fc78276af879fef277e80dfe199b8540"
+  },
+  "feature_metadata_sha256": "a7acb72f553fec625e7e604313b6babc85f64ea751ec2a2d6909895e63767479",
+  "feature_files_sha256": {
+    "normalization.pt": "6caaf33e94efe21c4563ec188e7df31ff0443c9e44a15c891247e768cf3eb7fa",
+    "test.pt": "5d014b4d391dd62bc2c4d58fd14b7380cb0c38bdaee2a936c1fe1935e7be7b08",
+    "train.pt": "4257545f43343e560f59f747d5effd465e09e0bf74eac78fffcc31104a39e24c",
+    "val.pt": "195b3e86d017f2172c171292c679b38f28fb1edd6090131d356cd9509405d406"
+  },
+  "weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "disclosure": "Exploratory separate resolution regime, sharing the previously inspected official cohort. External ImageNet pretraining. Higher-resolution inputs change the data regime; a gain over 28-pixel results cannot be attributed solely to quantum algorithms. All failed branches are preserved. No physical QPU or algorithmic novelty claim."
+}

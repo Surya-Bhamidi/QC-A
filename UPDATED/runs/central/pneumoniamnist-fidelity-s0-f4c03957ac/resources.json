@@ -1,0 +1,6 @@
+{
+  "parameters": 16226,
+  "dense_macs_per_image": 269952,
+  "macs_exclusions": "elementwise kernel, normalization, activation, softmax, dropout",
+  "pairs_per_image": 1156
+}

@@ -1,0 +1,16 @@
+{"kind": "epoch", "epoch": 1, "train_loss": 0.245036205348061, "validation_balanced_nll": 0.13201558589935303, "seconds": 2.740892699919641, "utc": "2026-10-02T13:28:25Z"}
+{"kind": "epoch", "epoch": 2, "train_loss": 0.19684577536410766, "validation_balanced_nll": 0.09822145104408264, "seconds": 5.583896099939011, "utc": "2026-10-02T13:28:28Z"}
+{"kind": "epoch", "epoch": 3, "train_loss": 0.16859028528277512, "validation_balanced_nll": 0.09472019970417023, "seconds": 8.263653899892233, "utc": "2026-10-02T13:28:30Z"}
+{"kind": "epoch", "epoch": 4, "train_loss": 0.17319120217301426, "validation_balanced_nll": 0.0838899314403534, "seconds": 10.977280199876986, "utc": "2026-10-02T13:28:33Z"}
+{"kind": "epoch", "epoch": 5, "train_loss": 0.12823996645419802, "validation_balanced_nll": 0.08004827797412872, "seconds": 13.877211399842054, "utc": "2026-10-02T13:28:36Z"}
+{"kind": "epoch", "epoch": 6, "train_loss": 0.14386349805680593, "validation_balanced_nll": 0.07301640510559082, "seconds": 17.01639299991075, "utc": "2026-10-02T13:28:39Z"}
+{"kind": "epoch", "epoch": 7, "train_loss": 0.14222617696783962, "validation_balanced_nll": 0.07328565418720245, "seconds": 20.032788799959235, "utc": "2026-10-02T13:28:42Z"}
+{"kind": "epoch", "epoch": 8, "train_loss": 0.12106493159736124, "validation_balanced_nll": 0.07540285587310791, "seconds": 22.911272199940868, "utc": "2026-10-02T13:28:45Z"}
+{"kind": "epoch", "epoch": 9, "train_loss": 0.11791087892428737, "validation_balanced_nll": 0.07528098672628403, "seconds": 25.863761299988255, "utc": "2026-10-02T13:28:48Z"}
+{"kind": "epoch", "epoch": 10, "train_loss": 0.1358088891994376, "validation_balanced_nll": 0.06968667358160019, "seconds": 28.796475099981762, "utc": "2026-10-02T13:28:51Z"}
+{"kind": "epoch", "epoch": 11, "train_loss": 0.12957797606516006, "validation_balanced_nll": 0.07574088126420975, "seconds": 31.73477029998321, "utc": "2026-10-02T13:28:54Z"}
+{"kind": "epoch", "epoch": 12, "train_loss": 0.10873429015114232, "validation_balanced_nll": 0.07269012928009033, "seconds": 34.792887300020084, "utc": "2026-10-02T13:28:57Z"}
+{"kind": "epoch", "epoch": 13, "train_loss": 0.10495402418336527, "validation_balanced_nll": 0.07366690784692764, "seconds": 37.47773749998305, "utc": "2026-10-02T13:29:00Z"}
+{"kind": "epoch", "epoch": 14, "train_loss": 0.10518634649105972, "validation_balanced_nll": 0.07545652240514755, "seconds": 40.111594099900685, "utc": "2026-10-02T13:29:02Z"}
+{"kind": "epoch", "epoch": 15, "train_loss": 0.13357973511480334, "validation_balanced_nll": 0.07280218601226807, "seconds": 42.92729999986477, "utc": "2026-10-02T13:29:05Z"}
+{"kind": "epoch", "epoch": 16, "train_loss": 0.10318890497556862, "validation_balanced_nll": 0.07284506410360336, "seconds": 45.55499659990892, "utc": "2026-10-02T13:29:08Z"}

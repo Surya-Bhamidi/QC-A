@@ -1,0 +1,11 @@
+{
+  "manifest_sha256": "5667579befce77b0f3fd7553e5b180380cea32caf9be6ab1eb87a1addf80e1bb",
+  "source_sha256": {
+    "research/hybrid_accuracy.py": "9101f0bbebc929e7041e50ef9961dbe84b45c8d2df1918b79403ab5f60bf50fa",
+    "research/models.py": "8cdd37c0e53d5ba9dc6ad120633237c6f3770fb659ba9be4aa74e3dbc6d192b4",
+    "research/data.py": "724fa1c9f96781c81a805d929de948a455b67a18218f81664e8e0a35a579ad7f",
+    "research/metrics.py": "090a7ca9d6d14ce1e2031a255299e2f255c949114b27423dc08233279385b73d"
+  },
+  "utc": "2026-10-02T10:34:10.107264+00:00",
+  "test_disclosure": "Official test split was inspected in earlier experiments"
+}

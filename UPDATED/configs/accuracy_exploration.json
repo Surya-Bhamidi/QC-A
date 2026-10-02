@@ -1,0 +1,15 @@
+{
+  "purpose": "Exploratory validation-only accuracy study after the frozen measurement follow-up. No test metric may select a configuration; any later test result is disclosed as exploratory because this test split was previously inspected.",
+  "dataset": "pneumoniamnist",
+  "seeds": [0, 1, 2],
+  "models": ["fidelity", "dot"],
+  "selection_metric": "validation AUROC, averaged across the three training seeds; accuracy is reported as a secondary validation metric",
+  "base": {"image_size":28,"patch_size":7,"embed_dim":32,"heads":2,"qk_dim":4,"depth":2,"mlp_dim":64,"dropout":0.1,"beta":2.0,"epochs":40,"batch_size":64,"lr":0.0008,"weight_decay":0.0001,"fraction":1.0,"class_weight":true,"augment":false,"threads":4},
+  "candidates": [
+    {"name":"longer-training","override":{}},
+    {"name":"longer-training-augmentation","override":{"augment":true}},
+    {"name":"smaller-patches","override":{"patch_size":4,"augment":true}},
+    {"name":"larger-smaller-patches","override":{"patch_size":4,"embed_dim":48,"depth":3,"mlp_dim":96,"augment":true,"lr":0.0005}}
+  ],
+  "interpretation": "This investigates optimization/capacity, not a new quantum algorithm. Fidelity must outperform the same-recipe dot control to support a kernel-specific claim."
+}

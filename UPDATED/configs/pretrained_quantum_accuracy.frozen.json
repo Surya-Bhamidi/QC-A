@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-02T12:55:33.050348+00:00",
+  "manifest_sha256": "7f7a8486feba390add1822dfcee7b848db3544ce823b9ed61eab8a8a3ec62222",
+  "source_sha256": {
+    "research/quantum_robust.py": "de461cfde48d51deb385166b910746986eb58dcbd5a7d605222fc9a822e92ef5",
+    "research/quantum_robust_experiment.py": "86e6eb264b8c152cf9380826552c6042e5c9465fe29d634243ba9c69abd6da1f",
+    "research/models.py": "8cdd37c0e53d5ba9dc6ad120633237c6f3770fb659ba9be4aa74e3dbc6d192b4",
+    "research/config.py": "e755a190715eab3d74ae6000bc61b9ff8c79296051ee73a4cf30bc3e60d9318f",
+    "research/data.py": "724fa1c9f96781c81a805d929de948a455b67a18218f81664e8e0a35a579ad7f",
+    "research/train.py": "e7f0ece42c9cdcb4e665b5396ab1df576b946495ffd074c6a585697281de5d5f",
+    "research/metrics.py": "090a7ca9d6d14ce1e2031a255299e2f255c949114b27423dc08233279385b73d",
+    "research/runtime.py": "1fdf3d44f3cdd828afc9672bceb53f30411b23c6ffa503409c8a51204aad5e14",
+    "research/quantum_transfer.py": "2eaf47511183564f95daa1b016319dea1a4dc56132fc74337c190cb3b9c24057",
+    "research/quantum_transfer_experiment.py": "16e981e76983cf6ae509e716695c0cdea34b676359fc69367b42bd198c8c9267"
+  },
+  "feature_metadata_sha256": "1e7a4efdcdd0f095f34f8965dd7dec687beae66fa297143e6d14a593aaea7c1d",
+  "feature_files_sha256": {
+    "normalization.pt": "a809af0795049ae0c55fb00562c0ccf1870430e0fcb8e63ad4db939363d455be",
+    "test.pt": "069c1975f4b64676be82c8e8330b5f31cf4a9016efb8eafde0aeba32fbc1b805",
+    "train.pt": "09c272ca9ce680987a17517916e74b1088aad669b6e091a2bf80f33cd2d1ae8c",
+    "val.pt": "ace19bda6f3df4abe32b0557a122bf479f48b565611690c32efb19775fc6c96c"
+  },
+  "weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "disclosure": "Exploratory follow-up on the previously inspected official test cohort. External ImageNet pretraining changes the model/data regime. No physical QPU, finite-shot accuracy or newly invented algorithm claim. All controls use the same features."
+}

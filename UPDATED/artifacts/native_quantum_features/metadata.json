@@ -1,0 +1,42 @@
+{
+  "manifest_sha256": "7048c40e3444ac7d540707f153498e6cc4f38e03d9baed4d6d53b483c003eebb",
+  "weights_sha256": "f37072fd47e89c5e827621c5baffa7500819f7896bbacec160b1a16c560e07ec",
+  "dataset_sha256": "2a6faaca43872b4bcf4154a79625631ab29683b41e265ab7936d0513351fe591",
+  "feature_source_sha256": "2eaf47511183564f95daa1b016319dea1a4dc56132fc74337c190cb3b9c24057",
+  "files_sha256": {
+    "normalization.pt": "6caaf33e94efe21c4563ec188e7df31ff0443c9e44a15c891247e768cf3eb7fa",
+    "test.pt": "5d014b4d391dd62bc2c4d58fd14b7380cb0c38bdaee2a936c1fe1935e7be7b08",
+    "train.pt": "4257545f43343e560f59f747d5effd465e09e0bf74eac78fffcc31104a39e24c",
+    "val.pt": "195b3e86d017f2172c171292c679b38f28fb1edd6090131d356cd9509405d406"
+  },
+  "shapes": {
+    "train": [
+      2,
+      4708,
+      4,
+      512
+    ],
+    "val": [
+      1,
+      524,
+      4,
+      512
+    ],
+    "test": [
+      1,
+      624,
+      4,
+      512
+    ]
+  },
+  "seconds": {
+    "train": 118.16135680000298,
+    "val": 7.587680700002238,
+    "test": 8.754364600055851
+  },
+  "preprocessing": "ImageClassification(\n    crop_size=[224]\n    resize_size=[256]\n    mean=[0.485, 0.456, 0.406]\n    std=[0.229, 0.224, 0.225]\n    interpolation=InterpolationMode.BILINEAR\n)",
+  "frozen_encoder_parameters": 11176512,
+  "pretraining": "ImageNet-1K",
+  "normalization_fit": "training_views_only",
+  "physical_hardware": false
+}

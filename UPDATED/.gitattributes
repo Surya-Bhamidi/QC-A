@@ -1,0 +1,2 @@
+# Hash-locked evidence must retain identical bytes on Windows and Unix.
+* -text

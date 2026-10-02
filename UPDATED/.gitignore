@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.aux
+*.log
+*.toc
+*.lof
+*.lot
+*.out
+*.synctex.gz
+# Official raw native dataset exceeds GitHub's regular 100 MB file limit.
+# The local package includes it; fetch_assets.py restores it after cloning.
+data/native_224/*.npz
+data/native_224/*.prefix
+data/native_224/*.part

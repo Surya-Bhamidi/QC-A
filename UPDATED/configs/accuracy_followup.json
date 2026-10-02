@@ -1,0 +1,10 @@
+{
+  "purpose": "Frozen exploratory matched-kernel accuracy follow-up. Selected from validation-only pilot: longer training improved validation AUROC, while augmentation lowered it. The official test split was previously inspected by the original study, so this is explicitly exploratory rather than fresh confirmation.",
+  "datasets": ["pneumoniamnist"],
+  "seeds": [0, 1, 2, 3, 4],
+  "models": ["fidelity", "dot"],
+  "base": {"image_size":28,"patch_size":7,"embed_dim":32,"heads":2,"qk_dim":4,"depth":2,"mlp_dim":64,"dropout":0.1,"beta":2.0,"epochs":40,"batch_size":64,"lr":0.0008,"weight_decay":0.0001,"fraction":1.0,"class_weight":true,"augment":false,"threads":4},
+  "selection": "Configuration selected on three-seed validation AUROC only: fidelity 0.99238 versus dot 0.99117. No test outcomes selected epochs, architecture or optimizer.",
+  "primary_comparison": "Fidelity minus matched low-dimensional dot, accuracy and AUROC across five training seeds.",
+  "interpretation": "Longer training is an optimization improvement, not a novel quantum algorithm. Product fidelity remains an analytical classical formula during training/inference."
+}

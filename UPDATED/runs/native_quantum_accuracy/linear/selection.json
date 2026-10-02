@@ -1,0 +1,31 @@
+{
+  "candidates": [
+    {
+      "C": 0.01,
+      "validation_balanced_nll": 0.09144441783428192,
+      "iterations": 50
+    },
+    {
+      "C": 0.1,
+      "validation_balanced_nll": 0.08998413383960724,
+      "iterations": 88
+    },
+    {
+      "C": 1.0,
+      "validation_balanced_nll": 0.14406509697437286,
+      "iterations": 182
+    },
+    {
+      "C": 10.0,
+      "validation_balanced_nll": 0.34585654735565186,
+      "iterations": 319
+    }
+  ],
+  "selected": {
+    "C": 0.1,
+    "validation_balanced_nll": 0.08998413383960724,
+    "iterations": 88
+  },
+  "criterion": "validation_class_balanced_NLL",
+  "test_labels_used_for_selection": false
+}

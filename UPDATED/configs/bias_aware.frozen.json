@@ -1,0 +1,21 @@
+{
+  "manifest_sha256": "867a1740cb5322cc21a7322f6346316c02751785b1772efc74953f4a8827ca4e",
+  "utc": "2026-10-02T09:41:55.813250+00:00",
+  "gate_sha256": "78ac28ff9688b9023700b6bebd860523fdb798ba51a83062d516373a4ff300a0",
+  "code_sha256": {
+    "research/bias_aware.py": "97dc2a4ded87b16aa755f5d4d4fd91d2e634641f44f8b2803c4cd94b2dbd0907",
+    "research/noisy_overlap.py": "b2b38f0385d2c52c79ed97b3dfd98c89a3611612d40059d45abb40d89fa4166d",
+    "research/bias_experiment.py": "e35894214e6ba0da0e54d341474f119f7890cbd24f621a68c23b156a59bfa2c6",
+    "research/models.py": "8cdd37c0e53d5ba9dc6ad120633237c6f3770fb659ba9be4aa74e3dbc6d192b4",
+    "research/shots.py": "0b963498bf6f1ba3af522371947a390341ac39d14ec239301f97cd29daeae49e",
+    "research/circuits.py": "184ea6ed29a8e09d3c5e56e6e81ce5d3eb4d3bf83e952a27a199625d8fb271f7",
+    "research/noise_probe.py": "1e6891906eddd714228a705ac2eb4990bd8d50c9cd6c0e470679f082db9d51d0",
+    "research/train.py": "e7f0ece42c9cdcb4e665b5396ab1df576b946495ffd074c6a585697281de5d5f",
+    "research/data.py": "724fa1c9f96781c81a805d929de948a455b67a18218f81664e8e0a35a579ad7f",
+    "research/config.py": "e755a190715eab3d74ae6000bc61b9ff8c79296051ee73a4cf30bc3e60d9318f",
+    "research/runtime.py": "1fdf3d44f3cdd828afc9672bceb53f30411b23c6ffa503409c8a51204aad5e14",
+    "research/metrics.py": "090a7ca9d6d14ce1e2031a255299e2f255c949114b27423dc08233279385b73d",
+    "configs/central.json": "b2ea61720d020b9bd10b39f211f5d580957ad1e328ae9100ef85d6200fb80a90"
+  },
+  "disclosure": "Follow-up on previously inspected dataset; new method settings selected without new test outcomes"
+}

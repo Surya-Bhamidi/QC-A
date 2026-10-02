@@ -1,0 +1,16 @@
+{
+  "dataset":"pneumoniamnist",
+  "native_image_size":224,
+  "dataset_root":"data/native_224",
+  "official_md5":"d6a3c71de1b945ea11211b03746c1fe1",
+  "seeds":[0,1,2,3,4],
+  "kernels":["entangled","product","dot"],
+  "backbone":{"architecture":"resnet18","weights":"IMAGENET1K_V1","weight_file":"pretrained_models/resnet18-f37072fd.pth","pool_size":2,"feature_batch_size":32,"threads":8,"training_views":["identity","horizontal_flip"]},
+  "head":{"image_size":28,"patch_size":14,"embed_dim":32,"heads":2,"qk_dim":4,"depth":2,"mlp_dim":64,"dropout":0.1,"beta":2.0},
+  "head_grid_note":"Legacy head image_size/patch_size fields set four positional tokens only; its patch embedder is deleted. The actual image encoder input is native 224 pixels.",
+  "training":{"epochs":16,"batch_size":64,"lr":0.0008,"weight_decay":0.001,"threads":4,"warmup_epochs":2,"ema_decay":0.95,"mixup_alpha":0.1,"class_weight":true},
+  "linear_C_candidates":[0.01,0.1,1.0,10.0],
+  "selection":"Reuse the fixed pretrained branch recipe for all neural kernels. Best EMA checkpoint by class-balanced validation NLL. Linear regularization by the same validation criterion. No test-selected settings.",
+  "execution":"Native-224 official PneumoniaMNIST with frozen ImageNet ResNet-18, four spatial tokens, four-qubit quantum gate attention. Independent full-test PennyLane compute-uncompute verification for both quantum maps.",
+  "disclosure":"Exploratory separate resolution regime, sharing the previously inspected official cohort. External ImageNet pretraining. Higher-resolution inputs change the data regime; a gain over 28-pixel results cannot be attributed solely to quantum algorithms. All failed branches are preserved. No physical QPU or algorithmic novelty claim."
+}
